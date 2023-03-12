@@ -276,7 +276,6 @@ label[for="menu-toggle"] {
 @media only screen and (max-width: 768px) {
 
   /* Adjust the styles for screens smaller than 768px */
-
   h1 {
     font-size: 48px;
     text-align: center;
