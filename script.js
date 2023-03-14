@@ -41,12 +41,12 @@ function lightMode() {
 // Switch Theme Dynamically
 function switchTheme(event) {
     if (event.target.checked) {
-        document.documentElement.setAttribute('data-theme', 'dark');
-        localStorage.setItem('theme', 'dark');
-        darkMode();
-    } else {
         document.documentElement.setAttribute('data-theme', 'light');
         localStorage.setItem('theme', 'light');
+        darkMode();
+    } else {
+        document.documentElement.setAttribute('data-theme', 'dark');
+        localStorage.setItem('theme', 'dark');
         lightMode();
     }
 }
@@ -60,11 +60,22 @@ toggleSwitch.addEventListener('change', switchTheme);
 const currentTheme = localStorage.getItem('theme');
 if (currentTheme) {
     document.documentElement.setAttribute('data-theme', currentTheme);
-    if (currentTheme === 'dark') {
+    if (currentTheme === 'light') {
         toggleSwitch.checked = true;
         darkMode();
     }
 }
+
+// Create a new instance of Typed.js
+var typed = new Typed('#typed', {
+    strings: ['CODER.', 'DESIGNER.', 'PHOTOGRAFER.'],
+    typeSpeed: 30,
+    backSpeed: 20,
+    loop: true,
+    onComplete: function (self, i) {
+      console.log('String typed:', self.strings[i]);
+    }
+});
 
 
 
