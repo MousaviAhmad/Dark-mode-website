@@ -358,15 +358,11 @@ label[for="menu-toggle"] {
     width: 200px;
     height: 200px;
     transition: transform 0.3s ease-in-out;
-}
+  }
 
-.homanImg:hover {
-    transform: scale(1.2);
-    z-index: 1;
-}
-  
-  .img-container:hover .homanImg {
-    transform: scale(1.1);
+  .homanImg:hover {
+      transform: scale(1.2);
+      z-index: 1;
   }
 
   .text-box {
