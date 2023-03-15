@@ -82,6 +82,18 @@ h1 {
   margin-bottom: 0;
 }
 
+.homanImg {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.homanImg:hover {
+    transform: scale(1.2);
+    z-index: 1;
+}
+
 .pro{
   margin-bottom: 10%;
 }
